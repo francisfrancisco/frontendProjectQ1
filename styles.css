@@ -1,0 +1,16 @@
+#pic{
+  margin: 0;
+  height: 100vh;
+  background-color: red;
+}
+.done {
+  text-decoration: line-through;
+  opactiy: 0.8;
+}
+
+.selected {
+  color: green;
+}
+#todoList{
+  width: 30vw;
+}

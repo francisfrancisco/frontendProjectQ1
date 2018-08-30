@@ -1,7 +1,17 @@
-#pic{
-  margin: 0;
-  height: 100vh;
-  background-color: red;
+body{
+    background-image: url(https://cdn.trendhunterstatic.com/thumbs/cool-backgrounds.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bround{
+  margin: .5em auto;
+  height: 98vh;
+  background-color: rgba(255,255,255,.2);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
 }
 .done {
   text-decoration: line-through;
@@ -11,6 +21,13 @@
 .selected {
   color: green;
 }
-#todoList{
-  width: 30vw;
+#time{
+  font-size: 6rem;
+}
+#user{
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+#user:focus{
+  outline: none;
 }

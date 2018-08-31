@@ -1,11 +1,16 @@
 body{
-    background-image: url(https://cdn.trendhunterstatic.com/thumbs/cool-backgrounds.jpeg);
+    background-image: url(https://cdn.photographylife.com/wp-content/uploads/2016/06/Mass.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1{
+  text-align: center;
+}
 #bround{
-  margin: .5em auto;
-  height: 98vh;
+  padding-top: 2rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  height: 96vh;
   background-color: rgba(255,255,255,.2);
   text-align: center;
   border-radius: 5px;
@@ -13,21 +18,73 @@ body{
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
+#greeting{
+  text-align: center;
+}
+
+#search{
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+#bored{
+  margin-top: 1rem;
+}
 .done {
   text-decoration: line-through;
   opactiy: 0.8;
+  color: red;
 }
 
 .selected {
-  color: green;
+  background-color: rgba(200,50,175,0.2);
+  border-radius: .5rem;
 }
 #time{
   font-size: 6rem;
 }
-#user{
+#search, #task, #user{
   background-color: rgba(0,0,0,0);
+  caret-color: purple;
+}
+#task{
+  width: 40vw;
   border: none;
 }
-#user:focus{
+#user{
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: .5rem;
+}
+#task:focus, #user:focus{
   outline: none;
+}
+#todoList{
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem;
+  width: 15vw;
+  overflow: scroll;
+  white-space: nowrap;
+  text-align: left;
+  border-radius: .5rem;
+  overflow-y: scroll;
+  height: 10rem;
+}
+#bordedButton{
+  margin-top: .5rem;
+}
+input:value{
+  color: red;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: purple;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
 }

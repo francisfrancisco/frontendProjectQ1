@@ -68,8 +68,6 @@ userName.addEventListener("change", () => {
 //AJAX REQUESTS
 axios.get("http://api.giphy.com/v1/gifs/random?api_key=YSSoblb6EYNT9VSRBNo29aU9RHJWCxch&tag=computers")
   .then((response) => {
-    console.log(response.data.data)
-    console.log(response.data.data.images['fixed_height_still'].url);
     document.querySelector("img").src = response.data.data.images['fixed_height_downsampled'].url
 
   })
@@ -79,7 +77,6 @@ axios.get("http://api.openweathermap.org/data/2.5/weather?q=phoenix&APPID=1ea5c5
   .then((response) => {
     const weather = response.data.weather[0].description;
     const temp = Math.floor(response.data.main.temp);
-    console.log(response.data.weather[0].description);
     if(weather === "clear sky"){
       weatherDescription.innerHTML = `<p>${temp}º <i class="far fa-sun"></i> ${response.data.weather[0].description}</p>`;
     }else if(weather === "few clouds" || weather === "scattered clouds" || weather === "broken clouds"){

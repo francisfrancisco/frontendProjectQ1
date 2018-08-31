@@ -96,7 +96,6 @@ axios.get("http://api.openweathermap.org/data/2.5/weather?q=phoenix&APPID=1ea5c5
 document.querySelector("#bordedButton").addEventListener("click", (e) => {
   axios.get("https://boredapi.com/api/activity/?type=recreational")
     .then((response) => {
-    console.log(response.data.activity);
     document.querySelector("#bored").innerHTML = "";
     document.querySelector("#bored").insertAdjacentHTML("beforeend", `<p>${response.data.activity}</p>`)
     })

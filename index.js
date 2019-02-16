@@ -18,9 +18,8 @@ function clock() {
   }else if(hours === 0){
     hours = hours+12;
   }
-  if(hours)
 
-  document.querySelector('#time').innerHTML = `${hours}:${taco(minutes)}:${taco(seconds)}`
+  document.querySelector('#time').innerHTML = `<strong>${hours}:${taco(minutes)}:${taco(seconds)}</strong>`
   function taco(num) {
     if (num < 10) {
       num = '0' + num

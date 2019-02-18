@@ -8,12 +8,13 @@ import './App.css';
 class App extends Component {
   state = {
     user: '',
-    location: ''
+    location: '',
+    bored: ''
   }
 
   componentDidMount() {
-    axios.get(``).then(res => {
-      this.setState({: res.data})
+    axios.get(`http://boredapi.com/api/activity/?type=recreational`).then(res => {
+      this.setState({bored: res.data})
     })
   }
 
